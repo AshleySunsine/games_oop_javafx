@@ -4,10 +4,10 @@ public class Win {
     public static boolean check(int[][] board) {
         for (int index = 0; index < board.length; index++) {
             if (board[index][index] == 1) {
-                return (checkHorizontal(board, index) && checkVertical(board, index));
+                return (checkHorizontal(board, index) || checkVertical(board, index));
                 }
             }
-        return false;
+        return true;
         }
 
     public static boolean checkHorizontal(int[][] board, int index) {
