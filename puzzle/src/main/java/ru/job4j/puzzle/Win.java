@@ -7,7 +7,7 @@ public class Win {
                 return (checkHorizontal(board, index) || checkVertical(board, index));
                 }
             }
-        return true;
+        return false;
         }
 
     public static boolean checkHorizontal(int[][] board, int index) {
