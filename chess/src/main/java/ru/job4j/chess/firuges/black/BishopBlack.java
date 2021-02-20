@@ -28,8 +28,8 @@ public class BishopBlack implements Figure {
         }
         int size = Math.abs(dest.getX() - position.getX());
         Cell[] steps = new Cell[size];
-        if ((dest.getX() - position.getX()) > 0) { deltaX = 1;} else { deltaX = -1;}
-        if ((dest.getY() - position.getY()) > 0) { deltaY = 1;} else { deltaY = -1;}
+        deltaX = ((dest.getX() - position.getX()) > 0) ? 1 : -1;
+        deltaY = ((dest.getY() - position.getY()) > 0) ? 1 : -1;
         int x = position().getX();
         int y = position().getY();
 
